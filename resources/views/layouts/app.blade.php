@@ -14,7 +14,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
-    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
 </head>
 <body id="app-layout">
 
@@ -68,8 +68,13 @@
             @include('partials.nav-sidebar')
         @endif
     </nav>
+    <div id="page-wrapper">
+    
+        <div class="col-lg-10 col-lg-offset-2">
+            @yield('content')
+        </div> <!-- end of col-lg-10 with offset -->
 
-    @yield('content')
+    </div> <!-- end of page wrapper -->
 </div>
     
 
@@ -85,6 +90,8 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.21/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="../js/vue.js"></script>
+    <script src="../js/vue-resource.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>

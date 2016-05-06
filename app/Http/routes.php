@@ -17,10 +17,13 @@ Route::get('/', function () {
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('home', 'HomeController@index');
 
 Route::group(['middleware' => 'auth'], function(){
 	Route::get('/dashboard', function(){
 		return view('dashboard.index');
 	});
+	Route::resource('student', 'StudentController');
+	
 });
+

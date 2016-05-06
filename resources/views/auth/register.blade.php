@@ -40,14 +40,6 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('id_no') ? ' has-error' : '' }}">
-                            {!! Form::label('id_no', 'ID Number', ['class' => 'col-md-4 control-label']) !!}
-
-                            <div class="col-md-6">
-                                {!! Form::text('id_no',null,['class'=> 'form-control', 'v-model' => 'user.id_no']) !!}
-                            </div>
-                        </div>
-
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             {!! Form::label('email', 'Email Address', ['class' => 'col-md-4 control-label']) !!}
 
