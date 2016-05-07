@@ -25,4 +25,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 2. Run composer install to install packages in your local project directory.
 3. Run php artisan migrate to create tables on your database.
    Note: create database name that is similar with the database name of the .env file to   maintain consistency.
-4. Run php artisan db:seed to generate sample data entries of your database tables
+4. Run php artisan db:seed to generate sample data entries of your database tables.
