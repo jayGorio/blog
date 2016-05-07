@@ -14,14 +14,15 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+
+## Instructions
+
+1. Clone the repository.
+2. Run composer install to install packages in your local project directory.
+3. Run php artisan migrate to create tables on your database.
+   Note: create database name that is similar with the database name of the .env file to   maintain consistency.
+4. Run php artisan db:seed to generate sample data entries of your database tables
