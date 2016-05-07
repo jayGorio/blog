@@ -61,7 +61,7 @@
                                    
                                    <a href="{{ route('student.edit', $s->id) }}" class="btn btn-xs btn-primary">Edit Info</a>
                                    
-                                   <a href="" class="btn btn-xs btn-danger">Enroll</a> 
+                                   <a href="{{ route('reservation.create', $s->id ) }}" class="btn btn-xs btn-danger">Enroll</a> 
                                 
                                 </div>
                             @endforeach

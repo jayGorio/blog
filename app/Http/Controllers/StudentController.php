@@ -12,14 +12,15 @@ use Carbon\Carbon;
 
 class StudentController extends Controller
 {
-    public function __construct()
-    {
-    	$this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    // 	$this->middleware('auth');
+    // }
 
     public function index()
     {
         $student = Student::latest()->paginate(10);
+        
         return $student;
 
     }

@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="page-wrapper">
-    <div class="col-lg-10 col-lg-offset-2">
-
        <!--  Page heading -->
        <div class="row">
            <div class="col-lg-12">
@@ -31,8 +28,6 @@
                
            </div>
        </div>
-
-    </div> <!-- end of col-lg-10 with offset -->
 
  </div> <!-- end of page wrapper -->
 @endsection

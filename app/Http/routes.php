@@ -24,6 +24,10 @@ Route::group(['middleware' => 'auth'], function(){
 		return view('dashboard.index');
 	});
 	Route::resource('student', 'StudentController');
-	
+	Route::resource('reservation', 'ReservationController', ['except' => 'create']);
+
+	Route::get('reservation/{id}/create', 
+		['as' => 'reservation.create', 'uses' => 'ReservationController@create'
+	]);
 });
 
